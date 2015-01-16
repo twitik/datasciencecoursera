@@ -1,16 +1,17 @@
-solar <- c()
+ozone <- c()
 j <- 0
 for (i in 1:153) 
 {
-if (!mna[i,1] && !mna[i,4]) 
+if (!mna[i,5] && !mna[i,1]) 
   {
    
-  if (m[i,1]>31 & m[i,4]>90)   {
-    print(m[i,2])
+  if (m[i,5] == 5)   {
+    print(m[i,1])
     j <- j + 1
-    solar[j] <- (m[i,2])     
+    ozone[j] <- (m[i,1])     
   }
   }
 }
 
-mean(solar)
+max(ozone)
+
