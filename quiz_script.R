@@ -1,14 +1,16 @@
+solar <- c()
+j <- 0
 for (i in 1:153) 
 {
-  if (m[i,1]>31) print(m[1,1]) 
-  
+if (!mna[i,1] && !mna[i,4]) 
+  {
+   
+  if (m[i,1]>31 & m[i,4]>90)   {
+    print(m[i,2])
+    j <- j + 1
+    solar[j] <- (m[i,2])     
+  }
+  }
 }
 
-i <- 5
-if (m[i,1]>31 & m[i,4]>10) { 
-  print(m[i,1])
-  print(m[i,4])
-}
-
-print(m[5,1])
-print(m[5,4])
+mean(solar)
