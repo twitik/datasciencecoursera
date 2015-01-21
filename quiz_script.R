@@ -1,17 +1,9 @@
-ozone <- c()
-j <- 0
-for (i in 1:153) 
-{
-if (!mna[i,5] && !mna[i,1]) 
-  {
-   
-  if (m[i,5] == 5)   {
-    print(m[i,1])
-    j <- j + 1
-    ozone[j] <- (m[i,1])     
-  }
-  }
+x <- 5
+y <- if(x < 3) {
+  NA
+} else {
+  10
 }
 
-max(ozone)
-
+maa <- cbind(5, 1:9)
+maa
